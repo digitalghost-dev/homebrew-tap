@@ -19,7 +19,7 @@ class PokeCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.0.2/poke-cli_Darwin_arm64.tar.gz"
-      sha256 "e09bc04006b662c44b646681c5820bb1a27df17b570e35d372f6a7eed99ecae8"
+      sha256 "4cddfa10c953d3e3099f12923381ba62a7a9e14168133d1ac40666be5b8b7a58"
 
       def install
         bin.install "poke-cli"
