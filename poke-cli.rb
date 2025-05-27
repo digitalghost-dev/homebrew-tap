@@ -5,21 +5,21 @@
 class PokeCli < Formula
   desc "A CLI tool written in Go that allows you to view data about Pokémon from the terminal."
   homepage "https://github.com/digitalghost-dev/poke-cli"
-  version "1.2.3"
+  version "1.2.4"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.3/poke-cli_Darwin_x86_64.tar.gz"
-      sha256 "a09ecb33acf1dd7c9ca64bd544bf9db2e5ed372c010da6a9c1a889ccbbbf3234"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.4/poke-cli_Darwin_x86_64.tar.gz"
+      sha256 "476123bbb1f57547d857232d4b860a43831fbc9eb70695f6d2c72181b716912d"
 
       def install
         bin.install "poke-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.3/poke-cli_Darwin_arm64.tar.gz"
-      sha256 "accd412e53c3dd45de2ab05faab82ec4ec1df2437f7d548abd0204afe8862952"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.4/poke-cli_Darwin_arm64.tar.gz"
+      sha256 "72d0549f53df4551e29476752a71fa46e90557b9d614a39743c73dc1e383769b"
 
       def install
         bin.install "poke-cli"
@@ -29,15 +29,15 @@ class PokeCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.3/poke-cli_Linux_x86_64.tar.gz"
-      sha256 "aa928aa46ebd1fcde7c79e3fe9b639d2b3f1a8d0763972ea2044008a7a067d3b"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.4/poke-cli_Linux_x86_64.tar.gz"
+      sha256 "06176d80c208c3f5f0d7f4e8a6a53854dfe737f0f9f2485a97e0a55b04af8f0b"
       def install
         bin.install "poke-cli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.3/poke-cli_Linux_arm64.tar.gz"
-      sha256 "bdd5a36b73086b81d60716355db0abcc05c434ca50e01182d6190012ea66ce97"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.2.4/poke-cli_Linux_arm64.tar.gz"
+      sha256 "60b24cb145112c20cf69f825dcdbae789c69f694bd4c875e5e03c05f6e5b33b1"
       def install
         bin.install "poke-cli"
       end
