@@ -13,22 +13,22 @@ cask "poke-cli" do
   on_macos do
     on_intel do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Darwin_x86_64.zip"
-      sha256 "cb42227da9b8c402caf0b20a16b9d998551866e350f3cc3f3221d8ba08571f46"
+      sha256 "f1f53ba645d47a34ec9ccef5cd4bfe86dbc1cd861e6c449e48d3f0eccece253c"
     end
     on_arm do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Darwin_arm64.zip"
-      sha256 "9713b6afd432d316bcf16940099bb1e4d0f10d21bd854ad8bc13fb4c92950e0c"
+      sha256 "bf8d82efb3c8c5ba1ffbbb142a570ec6c6a2d1a1a917fdefa748cc080dd2d823"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Linux_x86_64.zip"
-      sha256 "ca79a125ee8e062b737bd9b7c4ad6cd6c9fa482ebcb06d1405059d5384bf638c"
+      sha256 "72a665b845f6771b0b1add6423c2ef68ed3d826691eab80633676caa41c11f94"
     end
     on_arm do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Linux_arm64.zip"
-      sha256 "3d81edc9ed2d49fcf876b240942eb1cbed5fcc8215553e96b806435bb87df417"
+      sha256 "a854a7023b2a5b336b3ff71efc04bf92fd82000e75a6000c24efcffa585d8389"
     end
   end
 
