@@ -2,7 +2,7 @@
 cask "poke-cli" do
   desc "A hybrid CLI/TUI tool written in Go for viewing Pokémon data from the terminal!"
   homepage "https://github.com/digitalghost-dev/poke-cli"
-  version "1.3.3"
+  version "1.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "poke-cli" do
 
   on_macos do
     on_intel do
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Darwin_x86_64.zip"
-      sha256 "f1f53ba645d47a34ec9ccef5cd4bfe86dbc1cd861e6c449e48d3f0eccece253c"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.4.0/poke-cli_Darwin_x86_64.zip"
+      sha256 "1b4597bc2ab1bcdf43a32f084f567629b0194c66904bc301dd9350f41200f92f"
     end
     on_arm do
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Darwin_arm64.zip"
-      sha256 "bf8d82efb3c8c5ba1ffbbb142a570ec6c6a2d1a1a917fdefa748cc080dd2d823"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.4.0/poke-cli_Darwin_arm64.zip"
+      sha256 "10dbb50cc41fffce9f97ab1c363f1ec82b37bbe8c04f5769b0e2676cf0ea6c63"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Linux_x86_64.zip"
-      sha256 "72a665b845f6771b0b1add6423c2ef68ed3d826691eab80633676caa41c11f94"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.4.0/poke-cli_Linux_x86_64.zip"
+      sha256 "d2214eb673b3792246fdfb0ff3b286fbf0798bf37a59dff28fa4b5b2abd91598"
     end
     on_arm do
-      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.3.3/poke-cli_Linux_arm64.zip"
-      sha256 "a854a7023b2a5b336b3ff71efc04bf92fd82000e75a6000c24efcffa585d8389"
+      url "https://github.com/digitalghost-dev/poke-cli/releases/download/v1.4.0/poke-cli_Linux_arm64.zip"
+      sha256 "c6704377cc5f1c20b8a9700ff278276bdffd9486b78ce190c9923ffbf4e1d1b9"
     end
   end
 
@@ -37,7 +37,7 @@ cask "poke-cli" do
     ]
 
   postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+    if OS.mac? && system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/poke-cli"]
     end
   end
