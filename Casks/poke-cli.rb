@@ -3,7 +3,7 @@ cask "poke-cli" do
   name "poke-cli"
   desc "A hybrid CLI/TUI tool written in Go for viewing Pokémon data from the terminal!"
   homepage "https://docs.poke-cli.com/"
-  version "1.8.3"
+  version "1.8.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "poke-cli" do
   on_macos do
     on_intel do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v#{version}/poke-cli_Darwin_x86_64.zip"
-      sha256 "6024d1f5988df4a87720955e9ad4d9f065c266abc820c31d9882f47472885c6a"
+      sha256 "3732a0ff05bac518384e69fbe029ca1acd1f4ade2be68c9b3d4f8104437200bf"
     end
     on_arm do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v#{version}/poke-cli_Darwin_arm64.zip"
-      sha256 "12e2d9fae1874fa80620b103aba6e5af8d6a057d83556b752b1c789e7a56b6a2"
+      sha256 "be929fe40792cd469317fad5385d914aeef0f0b07ec5f69373747d26c18589ba"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v#{version}/poke-cli_Linux_x86_64.zip"
-      sha256 "7ead13b6c37365aa49a385d67f787e298361ce9ad41b34911b4aff43b4e4e5cf"
+      sha256 "597d0ff46675deb46da704adb1545a9796b44002a22edeb2e4dcdbc413373640"
     end
     on_arm do
       url "https://github.com/digitalghost-dev/poke-cli/releases/download/v#{version}/poke-cli_Linux_arm64.zip"
-      sha256 "aaec0f4351b98c46b78448223ba7a0338078476f394af87230346a31493f6762"
+      sha256 "9179539e1c8c6cd20dc4f2cc953547fc3b39b7c21e26e1455a8df5ed0b974bf3"
     end
   end
 
